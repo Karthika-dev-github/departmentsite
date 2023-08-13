@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+
+        background-color: gray;
+    }
+
+
+</style>
+<!--script>
+    function validateForm(){
+        let x=document.forms["myform"]["name"].value;
+        let a=document.forms["myform"]["rollno"].value;
+        let b=document.forms["myform"]["num"].value;
+        let c=document.forms["myform"]["mentor"].value;
+        let d=document.forms["myform"]["bg"].value;
+
+        if(x == a == b == c ==d ==""){
+            alert("Every details must be filled");
+            return false;
+        }
+    }
+
+</script>-->
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo"> 
+              <h2><b style="color: azure;" >DEPARTMENT OF INFORMATION TECHNOLOGY</b></h2>    
+             </div>
+             <ul>
+              <li><a href="department.html">Department</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="index1.html">Home</a></li>
+             </ul>
+        </div>   
+    </nav>
+    
+    <br><br><br><br><br><br><br><br><br><center>
+    <h2><b style="color:black">BLOOD DONATION REGISTRATION</b></h2>
+    <br><br>
+    <form name="myform" onsubmit="return validateForm()">
+    <table>
+        <tr><td><b><b>Name</b></b></td>
+        <td><input type="text" name="name" id="name" required ></td></tr>
+        <tr><td><b><b>Roll no</b></b></td>
+        <td><input type="text" name="rollno"  id="rollno" required ></td></tr>
+        <tr><td><b><b>Year</b></b></td>
+        <td><input type="number" name="num" id="num" required ></td></tr>
+        <tr><td><b><b>Mentor</b></td>
+        <td><input type="text" name="mentor" id="mentor" required ></td></tr>
+        <tr><td><b><b>Blood Group</b></b></td>
+        <td><input type="text" name="bg" id="bg" required ></td></tr>
+        <tr><td><input type="submit" value ="register"></td></tr>
+        
+    </table>
+</form>
+    
+</center>
+
+</body>
+</html>
